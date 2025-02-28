@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+
+   
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                gap: 10px;
+                background-color: black;
+                padding: 20px;
+                grid-template-areas:
+                    "header header"
+                    "left-content right-content"
+                    "footer footer";
+            }
+    
+            .header {
+                grid-area: header;
+                background-color: orange;
+                padding: 10px;
+                text-align: center;
+            }
+    
+            .left-content {
+                grid-area: left-content;
+                background-color: orange;
+                padding: 10px;
+                text-align: center;
+            }
+    
+            .right-content {
+                grid-area: right-content;
+                background-color: orange;
+                padding: 10px;
+                text-align: center;
+            }
+    
+            .footer {
+                grid-area: footer;
+                background-color: orange;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Header section</div>
+            <div class="left-content">Left content</div>
+            <div class="right-content">Right content</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+    </html>
+    

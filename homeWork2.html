@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var basicSalary = parseFloat(prompt("Enter basic salary:"));
+        var deduction = parseFloat(prompt("Enter deduction:"));
+
+        var grossSalary = basicSalary+deduction;
+
+        var tax = grossSalary*0.02;
+
+        var netSalary = grossSalary-tax;
+
+        document.write("basic salary - ",basicSalary);
+        document.write("<br/>");
+        document.write("deduction - ",deduction);
+        document.write("<br/>");
+        document.write("gross salary - ",grossSalary);
+        document.write("<br/>");
+        document.write("net salary - ",netSalary);
+
+
+
+
+
+    </script>
+
+</body>
+</html>

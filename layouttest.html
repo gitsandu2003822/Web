@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 10px; /* Adds spacing between columns */
+            width: 100%;
+        }
+
+        .left-content, .right-content {
+            background-color: orange;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-content">
+
+            <img src="6.jpg" alt="image" >
+        </div>
+        <div class="right-content">Right content</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p style="color: blue; font-family: Arial; font-size: 30px;"></p>
+
+    <script>
+        let greeting = "hello";
+
+        document.write("After removing whitespace: ", greeting.trim());
+        document.write("<br/><br/>");
+        document.write("Find the number of characters in the string: ", greeting.length);
+        document.write("<br/><br/>");
+        document.write("Find the character at position 3: ", greeting.charAt(3));
+        document.write("<br/><br/>");
+        document.write("Convert to Uppercase: ", greeting.toUpperCase());
+        document.write("<br/><br/>");
+
+        
+        function displaytext() {
+            document.write("My first user-defined function.");
+            document.write("<br/><br/>");
+        }
+
+        
+        function addNumbers(x, y) {
+            return x + y;
+        }
+
+       
+        displaytext();
+        document.write("Addition of two numbers: ", addNumbers(34, 44));
+    </script>
+
+</body>
+</html>

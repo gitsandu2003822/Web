@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web activity</title>
+</head>
+<body>
+
+
+
+    <p id="totalPrice"></p>
+    <p id="discount"></p>
+    <p id="netTotal"></p>
+
+    <script>
+
+        var price = parseInt(prompt("Please enter price of item - "));
+        var quantity = parseInt(prompt("please enter units"))
+
+
+        var totalPrice = price*quantity;
+        var discount = totalPrice*0.04;
+        var netTotal = totalPrice-discount;
+
+
+        document.getElementById("totalPrice").innerText = "Toatl price befor adding discount: " + totalPrice;
+        document.getElementById("discount").innerText = "discount added: " +discount;
+        document.getElementById("netTotal").innerText = "Total price after adding discount: " +netTotal;
+
+
+    </script>
+</body>
+</html>

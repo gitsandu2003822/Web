@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var number1 = parseInt(prompt("Enter first number:"));
+        var number2 = parseInt(prompt("Enter second number:"));
+        var operator = (prompt("Enter operator:"));
+
+        function add()
+        {
+
+            var result = number1+number2;
+            document.write("result - ",result);
+        
+        }
+
+        
+        function subtract()
+        {
+
+            var result = number1-number2;
+            document.write("result - ",result);
+        
+        }
+
+        
+        function multiply()
+        {
+
+            var result = number1*number2;
+            document.write("result - ",result);
+        
+        }
+        
+        function divide(){
+
+            var result = number1/number2;
+            document.write("result - ",result);
+
+        }
+
+
+
+
+
+
+
+        if(operator == "+")
+        {
+           add();
+        }
+        else if(operator == "-")
+        {
+            subtract();
+        }
+        else if(operator == "*")
+        {
+            multiply();
+        }
+        else
+        {
+            divide();
+        }
+        
+
+
+
+        
+
+
+    </script>
+    </head>
+<body>
+    
+   
+
+
+
+
+
+
+</body>
+</html>

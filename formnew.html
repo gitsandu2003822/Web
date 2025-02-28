@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Calculation & Hide</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h3>Price Calculation</h3>
+    
+    <label for="units">No of Units:</label>
+    <input type="number" id="units" value="2">
+    <br><br>
+
+    <label for="cost">Cost Per Unit:</label>
+    <input type="number" id="cost" value="3">
+    <br><br>
+    
+    <label for="total">Total Charge:</label>
+    <input type="text" id="total" value="6.00" readonly>
+    <br><br>
+
+    <button id="calculate">Calculate</button>
+    <button id="reset">Reset</button>
+    <br><br>
+    
+   
+    <p id="text">This is a paragraph that will be hidden slowly when you click the button.</p>
+    
+    <button id="hide">Hide</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#calculate").click(function(){
+                var units = parseFloat($("#units").val());
+                var cost = parseFloat($("#cost").val());
+                
+                if (isNaN(units) || isNaN(cost)) {
+                    alert("Please enter valid numbers!");
+                    return;
+                }
+
+                var total = units * cost;
+                $("#total").val(total.toFixed(2)); 
+            });
+
+            $("#reset").click(function(){
+                $("#units").val("");
+                $("#cost").val("");
+                $("#total").val("");
+            });
+
+            $("#hide").click(function(){
+                $("#text").hide(1000); 
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+#heading3{
+
+    color: blueviolet;
+    text-align: center;
+    border: 2px dashed black;
+
+}
+
+.headingC{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:underline;
+    text-decoration-color: blue;
+
+}
+
+#p1{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+    font-size: 30px;
+    margin: 100px 150px 100px 80px;
+    text-align: justify;
+    border: 3px double red;
+
+
+}

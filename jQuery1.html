@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $("#hide").click(function(){
+
+                $("#image1").hide(500);
+
+
+
+            });
+
+            $("#display").click(function(){
+                $("#image1").show(500);
+
+            });
+        });
+
+
+
+
+
+
+    </script>
+        <img id="image1" src="/Web/14.jpg">
+
+    
+    <br/>
+
+    <button id="display">Display</button>
+    <button id="hide">Hide</button>
+</body>
+</html>

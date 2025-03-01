@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+
+   
+    <h3>Change Image</h3>
+    <img id="myImage" src="image1.jpg" alt="Laptop" width="150">
+    <br>
+    <button onclick="changeImage()">Change Image</button>
+
+
+    <h3>Calculate Circle Area</h3>
+    <div id="circle" style="width: 100px; height: 100px; background: black; border-radius: 50%;" 
+         onmouseover="calculateArea()"></div>
+    <p id="areaText">Print circle area</p>
+
+    <script>
+      
+        function changeImage() {
+            document.getElementById("myImage").src = "image2.jpg"; // Change to new image
+        }
+
+        // Part (b) - Calculate Circle Area Function
+        function calculateArea() {
+            let radius = prompt("Enter the radius of the circle:");
+            let area = Math.PI * radius * radius;
+            document.getElementById("areaText").textContent = "Circle Area: " + area.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>

@@ -3,13 +3,16 @@
 
 </head>
 <body>
-   <img id="imageToImage" src="6.jpg" alt="imageToText" onmouseover="imageToImage()">
+    <p id="textToImage" 
+    onmouseover="changeText()">
+     Good Morning!!
+ </p>
 
 
 <script>
 
-function imageToImage() {
-            document.getElementById("imageToImage").outerHTML = '<img src ="8.jpg">';
+function changeText() {
+            document.getElementById("textToImage").textContent = "Bye......";
         }
 </script>
 

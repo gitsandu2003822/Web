@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculation & Hide</title>
+</head>
+<body>
+
+    <h3>Price Calculation</h3>
+
+    <label>Units:</label>
+    <input type="number" id="units"><br><br>
+
+    <label>Cost Per Unit:</label>
+    <input type="number" id="cost"><br><br>
+
+    <label>Total:</label>
+    <input type="text" id="total" readonly><br><br>
+
+    <button id="calculate">Calculate</button>
+    <button id="reset">Reset</button><br><br>
+
+    <p id="text">Click the button to hide this.</p>
+    <button id="hide">Hide</button>
+
+    <script>
+        document.getElementById("calculate").addEventListener("click", function() {
+            let units = document.getElementById("units").value;
+            let cost = document.getElementById("cost").value;
+            let total = units * cost;
+            document.getElementById("total").value = total.toFixed(2);
+        });
+
+        document.getElementById("reset").addEventListener("click", function() {
+            document.getElementById("units").value = "";
+            document.getElementById("cost").value = "";
+            document.getElementById("total").value = "";
+        });
+
+        document.getElementById("hide").addEventListener("click", function() {
+            document.getElementById("text").style.display = "none";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Transformations</title>
+</head>
+<body>
+
+    <!-- Text to Image -->
+    <p id="textToImage" style="color: blueviolet; font-size: 30px; font-family: 'Courier New', Courier, monospace;" 
+       onmouseover="textToImage()" onmouseout="resetText()">
+        Good Morning!!
+    </p>
+
+    <!-- Image to Text -->
+    <img id="imageToText" src="7.jpg" alt="Example Image" width="200" height="150"
+         onmouseover="imageToText()" onmouseout="resetImage()">
+
+    <!-- Image to Image -->
+    <img id="imageToImage" src="6.jpg" alt="First Image" width="200" height="150"
+         onmouseover="changeImage()" onmouseout="resetOriginalImage()">
+
+    <script>
+        function textToImage() {
+            document.getElementById("textToImage").innerHTML = '<img src="1.jpg" width="200">';
+        }
+
+      /*  function resetText() {
+            document.getElementById("textToImage").innerHTML = "Good Morning!!";
+        }
+
+        function imageToText() {
+            document.getElementById("imageToText").outerHTML = '<p id="imageToText" onmouseover="imageToText()" onmouseout="resetImage()">This is now text</p>';
+        }
+
+        function resetImage() {
+            document.getElementById("imageToText").outerHTML = '<img id="imageToText" src="19.jpg" alt="Example Image" width="200" height="150" onmouseover="imageToText()" onmouseout="resetImage()">';
+        }
+
+        function changeImage() {
+            document.getElementById("imageToImage").src = "8.jpg";
+        }
+
+        function resetOriginalImage() {
+            document.getElementById("imageToImage").src = "14.jpg";
+        }
+            */
+    </script>
+
+</body>
+</html>
